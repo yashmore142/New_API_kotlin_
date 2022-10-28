@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgUser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+    </ImageView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtId"
+    android:text="1"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    app:layout_constraintLeft_toRightOf="@id/imgUser"
+    app:layout_constraintTop_toTopOf="parent">
+
+</TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail"
+        app:layout_constraintLeft_toRightOf="@id/imgUser"
+        app:layout_constraintTop_toBottomOf="@id/txtId">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFirstName"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imgUser"
+        app:layout_constraintTop_toBottomOf="@id/txtEmail">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLastName"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imgUser"
+        app:layout_constraintTop_toBottomOf="@id/txtFirstName">
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
